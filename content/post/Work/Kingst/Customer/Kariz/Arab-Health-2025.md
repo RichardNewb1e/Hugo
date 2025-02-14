@@ -8,7 +8,8 @@ We're still buzzing from the incredible energy of Arab Health 2025!  It was a fa
 
 Kimia's kind words are a testament to the dedication and hard work of our entire team.  We strive to provide the best possible service and products, and it's incredibly rewarding to know that our efforts are appreciated.
 
-![Image1](1.jpg)
+![Letter1](/images/kimias_thank_you_letter1.jpg){{< figure src="/images/kimias_thank_you_letter.jpg" alt="Kimia's Thank You Letter 1" >}}
+![Letter2](/images/kimias_thank_you_letter2.jpg){{< figure src="/images/kimias_thank_you_letter.jpg" alt="Kimia's Thank You Letter 2" >}}
 
 We're so grateful for Kimia's feedback and for the opportunity to work with such wonderful customers.  Thank you, Kimia, for your kind words!  They inspire us to continue striving for excellence.
 
