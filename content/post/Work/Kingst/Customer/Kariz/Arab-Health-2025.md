@@ -1,6 +1,6 @@
 ---
 title: "A Heartfelt Thank You from Kimia at Arab Health 2025"
-date: 2077-02-10 20:12:10 # Adjust the date and time to pin the post on top
+date: 2025-02-10 20:12:10 # Adjust the date and time to pin the post on top
 categories: ["Customer Appreciation", "Arab Health"]
 ---
 
