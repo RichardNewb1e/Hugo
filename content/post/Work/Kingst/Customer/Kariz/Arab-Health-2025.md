@@ -1,7 +1,8 @@
 ---
 title: "A Heartfelt Thank You from Kimia at Arab Health 2025"
 date: 2025-02-02T10:00:00-05:00 # Adjust the date and time as needed
-categories: ["Customer Appreciation", "Arab Health 2025", "Thank You"]
+categories: ["Customer Appreciation", "Arab Health"]
+feature: true
 ---
 
 We're still buzzing from the incredible energy of Arab Health 2025!  It was a fantastic opportunity to connect with so many of our valued customers and partners.  One of the highlights was receiving a beautiful thank you letter from Kimia.  It truly made our day, and we wanted to share it with you all.
