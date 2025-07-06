@@ -15,3 +15,21 @@ httpd -k stop -n Apache24
 ### Powershell
 ``` bash
 powercfg /batteryreport
+```
+
+### Windows installation
+When you reach the "Let's connect you to a network" screen during the Windows 11 installation, do not connect to any network.
+
+Press Shift + F10 on your keyboard to open a Command Prompt window. (On some laptops, you might need to press Fn + Shift + F10.)
+
+In the Command Prompt, type the following command exactly as it appears and press Enter:
+
+Method 1: Using the OOBE\BYPASSNRO Command (Most Common)
+``` bash
+OOBE\BYPASSNRO
+```
+
+Method 2: Using start ms-cxh:localonly (For Newer Builds or if BYPASSNRO Fails)
+``` bash
+start ms-cxh:localonly
+```
