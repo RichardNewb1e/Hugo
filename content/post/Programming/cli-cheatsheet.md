@@ -15,6 +15,8 @@ httpd -k stop -n Apache24
 ### Powershell
 ``` bash
 powercfg /batteryreport
+
+Get-FileHash -Algorithm SHA256 ./filename
 ```
 
 ### Windows installation
