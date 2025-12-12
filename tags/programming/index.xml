@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programming on Richard's Blog</title><link>https://richardsong.cloud/tags/programming/</link><description>Recent content in Programming on Richard's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 21 Sep 2025 17:51:59 +0000</lastBuildDate><atom:link href="https://richardsong.cloud/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>STM32 Cheatsheet</title><link>https://richardsong.cloud/p/stm32-cheatsheet/</link><pubDate>Sun, 21 Sep 2025 17:51:59 +0000</pubDate><guid>https://richardsong.cloud/p/stm32-cheatsheet/</guid><description>&lt;h3 id="stm32cubeide-scale-setting"&gt;STM32CubeIDE Scale Setting
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-Dswt.enable.autoScale=true
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-Dswt.autoScale=300
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-Dswt.autoScale.method=nearest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>CLI Cheatsheet</title><link>https://richardsong.cloud/p/cli-cheatsheet/</link><pubDate>Tue, 08 Aug 2023 17:51:59 +0000</pubDate><guid>https://richardsong.cloud/p/cli-cheatsheet/</guid><description>&lt;h3 id="apache"&gt;Apache
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;httpd -k start -n Apache24
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;httpd -k stop -n Apache24
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="powershell"&gt;Powershell
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;powercfg /batteryreport
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Get-FileHash -Algorithm SHA256 ./filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="expo"&gt;Expo
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;npx expo run:android
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;eas build --platform android --profile preview
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="windows-installation"&gt;Windows installation
+&lt;/h3&gt;&lt;p&gt;When you reach the &amp;ldquo;Let&amp;rsquo;s connect you to a network&amp;rdquo; screen during the Windows 11 installation, do not connect to any network.&lt;/p&gt;
+&lt;p&gt;Press Shift + F10 on your keyboard to open a Command Prompt window. (On some laptops, you might need to press Fn + Shift + F10.)&lt;/p&gt;
+&lt;p&gt;In the Command Prompt, type the following command exactly as it appears and press Enter:&lt;/p&gt;
+&lt;p&gt;Method 1: Using the OOBE\BYPASSNRO Command (Most Common)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;OOBE&lt;span class="se"&gt;\B&lt;/span&gt;YPASSNRO
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Method 2: Using start ms-cxh:localonly (For Newer Builds or if BYPASSNRO Fails)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;start ms-cxh:localonly
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>CapnoCloud《服务协议》与《隐私协议》</title><link>https://richardsong.cloud/p/capnocloud%E6%9C%8D%E5%8A%A1%E5%8D%8F%E8%AE%AE%E4%B8%8E%E9%9A%90%E7%A7%81%E5%8D%8F%E8%AE%AE/</link><pubDate>Sun, 12 Feb 2023 16:10:55 +0000</pubDate><guid>https://richardsong.cloud/p/capnocloud%E6%9C%8D%E5%8A%A1%E5%8D%8F%E8%AE%AE%E4%B8%8E%E9%9A%90%E7%A7%81%E5%8D%8F%E8%AE%AE/</guid><description>&lt;h1 id="capnocloud服务协议与隐私协议"&gt;CapnoCloud《服务协议》与《隐私协议》
+&lt;/h1&gt;&lt;h2 id="引言"&gt;引言
+&lt;/h2&gt;&lt;p&gt;欢迎您使用CapnoCloud！Richard非常重视用户的隐私和个人信息保护。您在使用Richard的产品与/或服务时，Richard不会收集和使用您的相关信息。Richard希望通过本《使用条款》与《隐私协议》向您说明，在您使用Richard的产品与/或服务时如何收集和使用相关信息&lt;/p&gt;
+&lt;h2 id="隐私协议"&gt;《隐私协议》
+&lt;/h2&gt;&lt;p&gt;隐私政策
+Richard将CapnoCloud应用程序作为一个免费应用程序。本服务是由Richard免费提供的，旨在按现状使用。&lt;/p&gt;
+&lt;p&gt;如果有人决定使用我的服务，本页面用于告知访问者关于我的个人信息收集、使用和披露的政策。&lt;/p&gt;
+&lt;p&gt;如果您选择使用我的服务，那么您就同意了与本政策有关的信息收集和使用。我所收集的个人信息用于提供和改进服务。除了本隐私政策中所述的情况，我不会与任何人使用或分享您的信息。&lt;/p&gt;
+&lt;p&gt;本隐私政策中使用的术语与我们的条款和条件中的含义相同，可在CapnoCloud上查阅，除非本隐私政策中另有定义。&lt;/p&gt;
+&lt;p&gt;信息收集和使用&lt;/p&gt;
+&lt;p&gt;为了获得更好的体验，在使用我们的服务时，我可能会要求您向我们提供某些个人身份信息，包括但不限于号。我所要求的信息将保留在您的设备上，我不会以任何方式收集。&lt;/p&gt;
+&lt;p&gt;日志数据&lt;/p&gt;
+&lt;p&gt;我想告诉你，只要你使用我的服务，在应用程序出现错误的情况下，我就会收集你手机上的数据和信息（通过第三方产品），称为日志数据。该日志数据可能包括您的设备互联网协议（&amp;ldquo;IP&amp;rdquo;）地址、设备名称、操作系统版本、利用我的服务时的应用程序配置、您使用服务的时间和日期以及其他统计数据等信息。&lt;/p&gt;
+&lt;p&gt;饼干&lt;/p&gt;
+&lt;p&gt;Cookies是含有少量数据的文件，通常被用作匿名的唯一标识符。这些文件从您访问的网站发送到您的浏览器，并存储在您设备的内部存储器中。&lt;/p&gt;
+&lt;p&gt;本服务没有明确地使用这些 &amp;ldquo;cookies&amp;rdquo;。然而，本应用程序可能使用第三方代码和库，这些代码和库使用 &amp;ldquo;cookies &amp;ldquo;来收集信息并改进其服务。你可以选择接受或拒绝这些 &amp;ldquo;cookies&amp;rdquo;，并知道何时有 &amp;ldquo;cookies &amp;ldquo;被发送到你的设备上。如果您选择拒绝我们的cookies，您可能无法使用本服务的某些部分。&lt;/p&gt;
+&lt;p&gt;服务供应商&lt;/p&gt;
+&lt;p&gt;由于以下原因，我可能雇用第三方公司和个人。&lt;/p&gt;
+&lt;p&gt;为了促进我们的服务。
+代表我们提供服务。
+执行与服务相关的服务；或
+协助我们分析我们的服务如何被使用。
+我想告知本服务的用户，这些第三方可以接触到他们的个人信息。原因是要代表我们执行分配给他们的任务。然而，他们有义务不为任何其他目的披露或使用这些信息。&lt;/p&gt;
+&lt;p&gt;安全性&lt;/p&gt;
+&lt;p&gt;我很重视您对我们提供个人信息的信任，因此我们努力使用商业上可接受的方法来保护这些信息。但请记住，没有任何一种互联网传输方法或电子存储方法是100%安全和可靠的，我不能保证其绝对安全。&lt;/p&gt;
+&lt;p&gt;与其他网站的链接&lt;/p&gt;
+&lt;p&gt;本服务可能包含其他网站的链接。如果你点击一个第三方链接，你将被引导到该网站。请注意，这些外部网站不是由我经营的。因此，我强烈建议你审查这些网站的隐私政策。我无法控制任何第三方网站或服务的内容、隐私政策或做法，也不承担任何责任。&lt;/p&gt;
+&lt;p&gt;儿童的隐私&lt;/p&gt;
+&lt;p&gt;我不会有意地收集儿童的个人身份信息。我鼓励所有儿童不要通过应用程序和/或服务提交任何个人可识别信息。我鼓励父母和法定监护人监督其子女的互联网使用情况，并帮助执行本政策，指示其子女在未经其许可的情况下绝不通过应用程序和/或服务提供个人身份信息。如果你有理由相信，一个孩子通过应用程序和/或服务向我们提供了个人身份信息，请联系我们。您还必须至少年满16岁才能同意在您的国家处理您的个人身份信息（在某些国家，我们可能允许您的父母或监护人代表您这样做）。&lt;/p&gt;
+&lt;p&gt;本隐私政策的变更&lt;/p&gt;
+&lt;p&gt;我可能会不时地更新我们的隐私政策。因此，我们建议你定期查看本页面的任何变化。我将通过在本页面上发布新的隐私政策来通知您任何变化。&lt;/p&gt;
+&lt;p&gt;本政策自2023-01-01起生效。&lt;/p&gt;
+&lt;h2 id="服务协议"&gt;《服务协议》
+&lt;/h2&gt;&lt;p&gt;使用条款
+通过下载或使用本应用程序，这些条款将自动适用于您 - 因此，您应确保在使用本应用程序之前仔细阅读这些条款。你不允许以任何方式复制或修改该应用程序、该应用程序的任何部分或我们的商标。你不允许试图提取该应用程序的源代码，你也不应该试图将该应用程序翻译成其他语言或制作衍生版本。该应用程序本身，以及与之相关的所有商标、版权、数据库权利和其他知识产权，仍然属于Richard。&lt;/p&gt;
+&lt;p&gt;Richard致力于确保该应用程序尽可能的安全、可用和高效。为此，我们保留在任何时间、以任何理由对该应用程序进行修改或对其服务收费的权利。我们绝不会在没有向您明确说明您所支付的费用的情况下，对应用程序或其服务进行收费。&lt;/p&gt;
+&lt;p&gt;CapnoCloud应用程序存储和处理您提供给我们的个人数据，以提供我的服务。您有责任保证您的手机和对该应用程序的访问安全。因此，我们建议您不要对您的手机进行越狱或ROOT，越狱或ROOT是指去除您设备的官方操作系统所施加的软件限制和约束的过程。这可能会使你的手机容易受到恶意软件/病毒/恶意程序的攻击，损害你的手机的安全功能，这可能意味着CapnoCloud应用程序无法正常工作或根本无法工作。&lt;/p&gt;
+&lt;p&gt;您需要知道，应用程序的某些功能需要一个可用的互联网连接。这种连接可以是Wi-Fi或由您的移动网络供应商提供的，但如果您无法使用Wi-Fi，或您没有任何数据流量，Richard对该应用程序无法完全工作不承担责任。&lt;/p&gt;
+&lt;p&gt;如果你在有Wi-Fi的地区之外使用该应用程序，你应该记住，与你的移动网络供应商的协议条款仍将适用。因此，你可能会被你的移动供应商收取访问该应用程序时连接期间的数据费用，或其他第三方费用。在使用该应用程序时，你将接受任何此类费用的责任，包括如果你在没有关闭数据漫游的情况下在你的本土（即地区或国家）之外使用该应用程序的漫游数据费用。如果你不是你使用该应用程序的设备的账单支付人，请注意，我们认为你已经得到了账单支付人的许可来使用该应用程序。&lt;/p&gt;
+&lt;p&gt;同样，您需要确保您的设备保持有电状态&amp;ndash;如果它没电了，您无法打开它来使用服务，Richard不承担任何责任。&lt;/p&gt;
+&lt;p&gt;关于Richard对您使用该应用程序的责任，当您使用该应用程序时，尽管我们努力确保它在任何时候都是更新和正确的，但我们确实依靠第三方向我们提供信息，以便我们能够向您提供这些信息。对于您因完全依赖该应用程序的这一功能而遭受的任何直接或间接损失，Richard不承担任何责任。&lt;/p&gt;
+&lt;p&gt;在某些时候，我们可能希望更新该应用程序。该应用程序目前可在安卓和iOS系统上使用&amp;ndash;对这两个系统（以及我们决定将应用程序的可用性扩展到的任何其他系统）的要求可能会改变，如果您想继续使用该应用程序，您需要下载更新。Richard不承诺它将始终更新该应用程序，使其与您相关和/或与您的设备上安装的安卓和iOS版本一起使用。然而，您承诺始终接受向您提供的应用程序的更新，我们也可能希望停止提供该应用程序，并可能在任何时候终止使用该应用程序，而无需向您发出终止通知。除非我们另行告知您，在任何终止时，(a)这些条款中授予您的权利和许可将终止；(b)您必须停止使用该应用程序，并（如需要）从您的设备中删除该应用程序。&lt;/p&gt;
+&lt;p&gt;本条款和条件的变更&lt;/p&gt;
+&lt;p&gt;我可能会不时地更新我们的条款和条件。因此，建议你定期查看本页面的任何变化。我将通过在本页面上发布新的条款和条件来通知您任何变化。&lt;/p&gt;
+&lt;p&gt;这些条款和条件自2023-01-01起生效。&lt;/p&gt;
+&lt;p&gt;联系我们&lt;/p&gt;
+&lt;p&gt;如果您对我的条款和条件有任何疑问或建议，请不要犹豫，与我联系：richardniubility@gmail.com。&lt;/p&gt;</description></item><item><title>CapnoCloud Terms of Service and Privacy Policy</title><link>https://richardsong.cloud/p/capnocloud-terms-of-service-and-privacy-policy/</link><pubDate>Sun, 12 Feb 2023 16:10:23 +0000</pubDate><guid>https://richardsong.cloud/p/capnocloud-terms-of-service-and-privacy-policy/</guid><description>&lt;h1 id="capnocloud-terms-of-service--and-privacy-policy"&gt;CapnoCloud &lt;em&gt;Terms of Service&lt;/em&gt; and &lt;em&gt;Privacy Policy&lt;/em&gt;
+&lt;/h1&gt;&lt;h2 id="introduction"&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;Welcome to CapnoCloud! Richard takes the protection of your privacy and personal information very seriously. Richard does not collect or use information about you when you use Richard&amp;rsquo;s products and/or services, and through this &lt;em&gt;Terms of Service&lt;/em&gt; and &lt;em&gt;Privacy Policy&lt;/em&gt;, Richard would like to explain to you how information is collected and used when you use Richard&amp;rsquo;s products and/or services.&lt;/p&gt;
+&lt;h2 id="privacy-policy"&gt;Privacy Policy
+&lt;/h2&gt;&lt;p&gt;Privacy Policy
+Richard built the CapnoCloud app as a Free app. This SERVICE is provided by Richard at no cost and is intended for use as is.&lt;/p&gt;
+&lt;p&gt;This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.&lt;/p&gt;
+&lt;p&gt;If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.&lt;/p&gt;
+&lt;p&gt;The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at CapnoCloud unless otherwise defined in this Privacy Policy.&lt;/p&gt;
+&lt;p&gt;Information Collection and Use&lt;/p&gt;
+&lt;p&gt;For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to No. The information that I request will be retained on your device and is not collected by me in any way.&lt;/p&gt;
+&lt;p&gt;Log Data&lt;/p&gt;
+&lt;p&gt;I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.&lt;/p&gt;
+&lt;p&gt;Cookies&lt;/p&gt;
+&lt;p&gt;Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device&amp;rsquo;s internal memory.&lt;/p&gt;
+&lt;p&gt;This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.&lt;/p&gt;
+&lt;p&gt;Service Providers&lt;/p&gt;
+&lt;p&gt;I may employ third-party companies and individuals due to the following reasons:&lt;/p&gt;
+&lt;p&gt;To facilitate our Service;
+To provide the Service on our behalf;
+To perform Service-related services; or
+To assist us in analyzing how our Service is used.
+I want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.&lt;/p&gt;
+&lt;p&gt;Security&lt;/p&gt;
+&lt;p&gt;I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.&lt;/p&gt;
+&lt;p&gt;Links to Other Sites&lt;/p&gt;
+&lt;p&gt;This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.&lt;/p&gt;
+&lt;p&gt;Children’s Privacy&lt;/p&gt;
+&lt;p&gt;I do not knowingly collect personally identifiable information from children. I encourage all children to never submit any personally identifiable information through the Application and/or Services. I encourage parents and legal guardians to monitor their children&amp;rsquo;s Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to us through the Application and/or Services, please contact us. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).&lt;/p&gt;
+&lt;p&gt;Changes to This Privacy Policy&lt;/p&gt;
+&lt;p&gt;I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.&lt;/p&gt;
+&lt;p&gt;This policy is effective as of 2023-01-01&lt;/p&gt;
+&lt;h2 id="terms--conditions"&gt;Terms &amp;amp; Conditions
+&lt;/h2&gt;&lt;p&gt;Terms &amp;amp; Conditions
+By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages or make derivative versions. The app itself, and all the trademarks, copyright, database rights, and other intellectual property rights related to it, still belong to Richard.&lt;/p&gt;
+&lt;p&gt;Richard is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.&lt;/p&gt;
+&lt;p&gt;The CapnoCloud app stores and processes personal data that you have provided to us, to provide my Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the CapnoCloud app won’t work properly or at all.&lt;/p&gt;
+&lt;p&gt;You should be aware that there are certain things that Richard will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi or provided by your mobile network provider, but Richard cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.&lt;/p&gt;
+&lt;p&gt;If you’re using the app outside of an area with Wi-Fi, you should remember that the terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third-party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.&lt;/p&gt;
+&lt;p&gt;Along the same lines, Richard cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Richard cannot accept responsibility.&lt;/p&gt;
+&lt;p&gt;With respect to Richard’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavor to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Richard accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.&lt;/p&gt;
+&lt;p&gt;At some point, we may wish to update the app. The app is currently available on Android &amp;amp; iOS – the requirements for the both systems(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Richard does not promise that it will always update the app so that it is relevant to you and/or works with the Android &amp;amp; iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.&lt;/p&gt;
+&lt;p&gt;Changes to This Terms and Conditions&lt;/p&gt;
+&lt;p&gt;I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.&lt;/p&gt;
+&lt;p&gt;These terms and conditions are effective as of 2023-01-01&lt;/p&gt;
+&lt;p&gt;Contact Us&lt;/p&gt;
+&lt;p&gt;If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at &lt;a class="link" href="mailto:richardniubility@gmail.com" &gt;richardniubility@gmail.com&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Setup development environment for Mac</title><link>https://richardsong.cloud/p/setup-development-environment-for-mac/</link><pubDate>Tue, 27 Dec 2022 10:51:59 +0000</pubDate><guid>https://richardsong.cloud/p/setup-development-environment-for-mac/</guid><description>&lt;h3 id="homebrew"&gt;Homebrew
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;https://gitee.com/cunkai/HomebrewCN?_from&lt;span class="o"&gt;=&lt;/span&gt;gitee_search
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/bin/zsh -c &lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="rbenvruby"&gt;rbenv/ruby
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install rbenv ruby-build
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# run this and follow the printed instructions:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rbenv init
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# list latest stable versions:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rbenv install -l
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# list all local versions:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rbenv install -L
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# install a Ruby version:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rbenv install 3.2.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rbenv global 3.2.0 &lt;span class="c1"&gt;# set the default Ruby version for this machine&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# or:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rbenv &lt;span class="nb"&gt;local&lt;/span&gt; 3.2.0 &lt;span class="c1"&gt;# set the Ruby version for this directory&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="gem"&gt;gem
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;查看源
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;gem sources -l
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;更换源
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;gem sources --remove https://rubygems.org/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;gem sources --add https://gems.ruby-china.com/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="cocoapods"&gt;cocoapods
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;gem install cocoapods
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>ESP-IDF environment settings</title><link>https://richardsong.cloud/p/esp-idf-environment-settings/</link><pubDate>Mon, 15 Aug 2022 16:17:05 +0000</pubDate><guid>https://richardsong.cloud/p/esp-idf-environment-settings/</guid><description>&lt;h3 id="setting"&gt;Setting
+&lt;/h3&gt;&lt;p&gt;Ctrl+Shift+P -&amp;gt; C/C++: Edit configurations (UI)&lt;/p&gt;
+&lt;h2 id="compiler-path"&gt;Compiler Path
+&lt;/h2&gt;&lt;p&gt;D:\Espressif\tools\riscv32-esp-elf\esp-2021r2-patch3-8.4.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe&lt;/p&gt;
+&lt;h2 id="intellisense-mode"&gt;IntelliSense Mode
+&lt;/h2&gt;&lt;p&gt;windows-gcc-x64&lt;/p&gt;
+&lt;h2 id="include-path"&gt;Include Path
+&lt;/h2&gt;&lt;p&gt;D:/Espressif/frameworks/esp-idf-v4.4.2/components/**&lt;/p&gt;
+&lt;h2 id="advance-settings---compile-commands"&gt;Advance Settings -&amp;gt; Compile Commands
+&lt;/h2&gt;&lt;p&gt;${workspaceFolder}/build/compile_commands.json&lt;/p&gt;</description></item><item><title>CapnoView 《用户协议》与《隐私协议》</title><link>https://richardsong.cloud/p/capnoview-%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE%E4%B8%8E%E9%9A%90%E7%A7%81%E5%8D%8F%E8%AE%AE/</link><pubDate>Thu, 05 May 2022 18:56:27 +0000</pubDate><guid>https://richardsong.cloud/p/capnoview-%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE%E4%B8%8E%E9%9A%90%E7%A7%81%E5%8D%8F%E8%AE%AE/</guid><description>&lt;h1 id="capnoview-用户协议与隐私协议"&gt;CapnoView 《用户协议》与《隐私协议》
+&lt;/h1&gt;&lt;h2 id="引言"&gt;引言
+&lt;/h2&gt;&lt;p&gt;欢迎您使用CapnoView！Richard非常重视用户的隐私和个人信息保护。您在使用Richard的产品与/或服务时，Richard不会收集和使用您的相关信息。Richard希望通过本《用户协议》与《隐私协议》向您说明，在您使用Richard的产品与/或服务时如何收集和使用相关信息。&lt;/p&gt;
+&lt;h2 id="第一章"&gt;第一章
+&lt;/h2&gt;&lt;p&gt;第1条 手机软件CapnoView（以下简称app）是由Richard开发维护并向用户提供的医疗设备数据显示、存储与分享软件。
+第2条 本app所有权、经营权、管理权均属于Richard。
+第3条 本协议最终解释权归属Richard。&lt;/p&gt;
+&lt;h2 id="第二章"&gt;第二章
+&lt;/h2&gt;&lt;p&gt;在使用CapnoView时需要您在您的设备中开启蓝牙、文件存储、地理位置（位置信息）、相册访问（图片库）的权限以实现包括监测仪数据传输、录像等功能的使用。您可以在CapnoView APP或设备系统中逐项查看您上述权限的开启状态，并可以决定将这些权限随时的开启或关闭（Richard会指引您在您的设备系统中完成设置）。请您注意，您开启这些权限即代表您授权CapnoView可以使用这些权限来实现上述的功能，您关闭权限即代表您取消了这些授权，则CapnoView将无法继续提供上述功能或服务。CapnoView在所有业务功能中需要您开启设备的详细权限和使用目的如下：&lt;/p&gt;
+&lt;p&gt;1 BLUETOOTH （使用蓝牙权限）：程序与监测仪蓝牙配对功能模块使用&lt;/p&gt;
+&lt;p&gt;2 ACCESS COARSE LOCATION （定位权限）：部分手机需要开启定位服务配合蓝牙进行配对&lt;/p&gt;
+&lt;h2 id="第三章"&gt;第三章
+&lt;/h2&gt;&lt;p&gt;第1条 通常在app使用过程中，CapnoView通过用户手机蓝牙采集医疗设备数据并进行实时分析与显示，除此之外，CapnoView不会采集、存储和使用用户有关的任何信息：&lt;/p&gt;
+&lt;p&gt;第2条 特别地，对于存储在手机相册的录像，用户使用第三方社交平台（包括但不限于微信、QQ、邮箱等）进行医疗设备的录像分享时，这些信息将不会被泄露或转卖给Richard。&lt;/p&gt;</description></item><item><title>CapnoView Terms of Service and Privacy Policy</title><link>https://richardsong.cloud/p/capnoview-terms-of-service-and-privacy-policy/</link><pubDate>Thu, 05 May 2022 18:56:27 +0000</pubDate><guid>https://richardsong.cloud/p/capnoview-terms-of-service-and-privacy-policy/</guid><description>&lt;h1 id="capnoview-terms-of-service--and-privacy-police"&gt;CapnoView &lt;em&gt;Terms of Service&lt;/em&gt; and &lt;em&gt;Privacy Police&lt;/em&gt;
+&lt;/h1&gt;&lt;h2 id="introduction"&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;Welcome to CapnoView! Richard takes the protection of your privacy and personal information very seriously. Richard does not collect or use information about you when you use Richard&amp;rsquo;s products and/or services, and through this &lt;em&gt;Terms of Service&lt;/em&gt; and &lt;em&gt;Privacy Policy&lt;/em&gt;, Richard would like to explain to you how information is collected and used when you use Richard&amp;rsquo;s products and/or services.&lt;/p&gt;
+&lt;h2 id="chapter-i"&gt;Chapter I
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;The mobile software CapnoView (hereinafter referred to as the app) is a medical device data display, storage and sharing software developed and maintained by Richard and provided to users.&lt;/li&gt;
+&lt;li&gt;The ownership, operation and management rights of the app belong to Richard.&lt;/li&gt;
+&lt;li&gt;The final right to interpret this agreement belongs to Richard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="chapter-ii"&gt;Chapter II
+&lt;/h2&gt;&lt;p&gt;Using CapnoView requires you to enable Bluetooth, file storage, geolocation (location information), and photo album access (photo gallery) permissions on your device in order to use functions including monitor data transfer, video recording, and more. You can check the status of your above permissions on a case-by-case basis in the CapnoView APP or in your device system and decide to turn them on or off at any time (Richard will guide you through the settings in your device system). Please note that by turning these permissions on, you are granting CapnoView permission to use these permissions to perform the functions described above, and by turning them off, you are revoking these permissions and CapnoView will not be able to continue to provide the functions or services described above.The detailed permissions that CapnoView requires you to turn on your device for all business functions and the purposes for which they are used are as follows&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;BLUETOOTH (Use Bluetooth Permissions): The program is used with the Bluetooth pairing function module of the monitor&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ACCESS COARSE LOCATION: Some phones need to be paired with Bluetooth to enable location services.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="chapter-iii"&gt;Chapter III
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;CapnoView does not capture, store or use any information about the user other than the medical device data collected via Bluetooth on the user&amp;rsquo;s cell phone and displayed in real time during the use of the app.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In particular, for videos stored in cell phone albums, this information will not be disclosed or resold to Richard when users share videos of medical devices using third party social media platforms (including but not limited to WeChat, QQ, email, etc.).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>SheetsAutomation update log</title><link>https://richardsong.cloud/p/sheetsautomation-update-log/</link><pubDate>Thu, 05 May 2022 18:56:27 +0000</pubDate><guid>https://richardsong.cloud/p/sheetsautomation-update-log/</guid><description>&lt;h2 id="2024-02-05"&gt;2024-02-05
+&lt;/h2&gt;&lt;p&gt;AnesureH，AneSUreMini，AneSureM，AneSureS终检单新增连续漏电流列&lt;/p&gt;</description></item><item><title>nRF Sniffer for BLE with Wireshark</title><link>https://richardsong.cloud/p/nrf-sniffer-for-ble-with-wireshark/</link><pubDate>Sun, 06 Mar 2022 12:15:10 +0000</pubDate><guid>https://richardsong.cloud/p/nrf-sniffer-for-ble-with-wireshark/</guid><description>&lt;h1 id="hardware"&gt;Hardware
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;nRF52832&lt;/li&gt;
+&lt;li&gt;CH340 Max speed 3Mbps&lt;/li&gt;
+&lt;li&gt;CP2102 Max speed 1Mbps ==May work with sniffer 51296 firmware only==&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="software"&gt;Software
+&lt;/h1&gt;&lt;h2 id="wireshark"&gt;Wireshark
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Global Extcap path D:\Program Files\Wireshark\extcap Extcap Plugins path
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Personal configuration C:\Users\fsky\AppData\Roaming\Wireshark\profiles BLE profile path
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="nrf_snifferbat-with-python2-only"&gt;nrf_sniffer.bat with Python2 only
+&lt;/h2&gt;&lt;p&gt;First modify .bat file&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;@echo off
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt;&amp;#34;D:\Python\Python27\python&amp;#34;&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;%~dp0nrf_sniffer.py&amp;#34;&lt;/span&gt; %*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;then run it in cmd with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;nrf_sniffer.bat --extcap-interfaces
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="nrf_sniffer_blebat-with-python3-only"&gt;nrf_sniffer_ble.bat with Python3 only
+&lt;/h2&gt;&lt;p&gt;run it in cmd with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;nrf_sniffer_ble.bat --extcap-interfaces
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>DWin Serial Command</title><link>https://richardsong.cloud/p/dwin-serial-command/</link><pubDate>Fri, 18 Feb 2022 21:57:28 +0000</pubDate><guid>https://richardsong.cloud/p/dwin-serial-command/</guid><description>&lt;h3 id="显示"&gt;显示
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;5A A5 &lt;span class="m"&gt;07&lt;/span&gt; &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;0080&lt;/span&gt; 5A &lt;span class="m"&gt;00&lt;/span&gt; &lt;span class="m"&gt;00&lt;/span&gt; &lt;span class="m"&gt;33&lt;/span&gt; 5A A5 &lt;span class="m"&gt;07&lt;/span&gt; &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;0084&lt;/span&gt; 5A01 &lt;span class="m"&gt;0000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;270°显示&lt;span class="o"&gt;=&lt;/span&gt;33hex，切换至页面0&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;0000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;5A A5 &lt;span class="m"&gt;07&lt;/span&gt; &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;0080&lt;/span&gt; 5A &lt;span class="m"&gt;00&lt;/span&gt; &lt;span class="m"&gt;00&lt;/span&gt; &lt;span class="m"&gt;30&lt;/span&gt; 5A A5 &lt;span class="m"&gt;07&lt;/span&gt; &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;0084&lt;/span&gt; 5A01 &lt;span class="m"&gt;0001&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;0°显示&lt;span class="o"&gt;=&lt;/span&gt;30hex，切换至页面1&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;0001&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;5A A5 &lt;span class="m"&gt;07&lt;/span&gt; &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;0082&lt;/span&gt; &lt;span class="m"&gt;32&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nv"&gt;屏幕亮度32hex&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;60dec
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;5A A5 0D &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;0310&lt;/span&gt; 5AA5 &lt;span class="m"&gt;0100&lt;/span&gt; &lt;span class="m"&gt;0002&lt;/span&gt; &lt;span class="m"&gt;0024&lt;/span&gt; &lt;span class="m"&gt;0064&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;实时曲线通道00 写入02个字 0024和0064
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;5A A5 &lt;span class="m"&gt;05&lt;/span&gt; &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;0301&lt;/span&gt; &lt;span class="m"&gt;0000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;清除实时曲线，0301&lt;span class="o"&gt;=&lt;/span&gt;曲线通道00；0303&lt;span class="o"&gt;=&lt;/span&gt;曲线通道01
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;5A A5 &lt;span class="m"&gt;05&lt;/span&gt; &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;5100&lt;/span&gt; 015F
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;向地址为5100的文本显示控件写入Unicode代码为U+015F的字符，Unicode字库起始若不为0000，需减去起始值
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="字库"&gt;字库
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;span class="lnt"&gt;23
+&lt;/span&gt;&lt;span class="lnt"&gt;24
+&lt;/span&gt;&lt;span class="lnt"&gt;25
+&lt;/span&gt;&lt;span class="lnt"&gt;26
+&lt;/span&gt;&lt;span class="lnt"&gt;27
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Unicode常见语言编码范围
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（1）u0000-uFFFF：包含世界上所有语言字符，俗称“万国码”。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（2）u0000-u007F：基本拉丁字符，包含常见数字、字母。（阿拉伯数字：u0030—u0039；大写字母：u0041—u005A；小写字母：u0061—u007A）
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（3）u0000-u01FF：包含英语/荷兰语/西班牙语/意大利语/葡萄牙语/丹麦语/德语/芬兰语/挪威语/瑞典语/法语/土耳其语。（同语系）。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（4）u4E00-u9FD5：中文
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（5）uAC00-uD7AF：韩文
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（6）u3040-u31FF：日文
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（7）u0E00-u0E7F：泰文
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（8）u0400-u052F：俄语
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（9）u0600-u06FF：阿拉伯语
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（10）u0900-u097F：印度语
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;对于不是从u0000开始的unicode编码字库，因为是“截取”的一部分编码，写指令时需要减去起始编码，得到的值才是正确的字符编码。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（1）韩语
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;uAC00-uD7AF韩语：显示“uAC8B”编码字符
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;AC8B-AC00&lt;span class="o"&gt;=&lt;/span&gt;008B
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Tx：5A A5 &lt;span class="m"&gt;05&lt;/span&gt; &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;1000&lt;/span&gt; 008B
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（2）阿拉伯语
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;u0600-u06FF阿拉伯语：显示“u0626”编码字符
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;0626-0600&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;0026&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Tx：5A A5 &lt;span class="m"&gt;05&lt;/span&gt; &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;1010&lt;/span&gt; &lt;span class="m"&gt;0026&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;（3）印度语
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;u0900-u097F印度语：显示“u092D”编码字符
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;092D-0900&lt;span class="o"&gt;=&lt;/span&gt;002D
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Tx：5A A505 &lt;span class="m"&gt;82&lt;/span&gt; &lt;span class="m"&gt;1020&lt;/span&gt; 002D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>InfiniTime CMake Options</title><link>https://richardsong.cloud/p/infinitime-cmake-options/</link><pubDate>Thu, 25 Nov 2021 17:46:43 +0000</pubDate><guid>https://richardsong.cloud/p/infinitime-cmake-options/</guid><description>&lt;h3 id="settings---build-execution-deployment---cmake"&gt;Settings -&amp;gt; Build, Execution, Deployment -&amp;gt; CMake
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-DCMAKE_BUILD_TYPE&lt;span class="o"&gt;=&lt;/span&gt;Debug
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-DCMAKE_SYSTEM_NAME&lt;span class="o"&gt;=&lt;/span&gt;Generic
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-DARM_NONE_EABI_TOOLCHAIN_PATH&lt;span class="o"&gt;=&lt;/span&gt;D:/CpnyFile/Richard/PineTime/Dependencies/gcc-arm-none-eabi-10-2020-q4-major
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-DNRF5_SDK_PATH&lt;span class="o"&gt;=&lt;/span&gt;D:/CpnyFile/Richard/PineTime/Dependencies/nRF5_SDK_17.0.2_d674dde
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-DUSE_JLINK&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-DNRFJPROG&lt;span class="o"&gt;=&lt;/span&gt;D:/CpnyFile/Richard/PineTime/Dependencies
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-DBUILD_DFU&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>
