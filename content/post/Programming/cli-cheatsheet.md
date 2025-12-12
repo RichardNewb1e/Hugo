@@ -19,6 +19,13 @@ powercfg /batteryreport
 Get-FileHash -Algorithm SHA256 ./filename
 ```
 
+### Expo
+``` bash
+npx expo run:android
+
+eas build --platform android --profile preview 
+```
+
 ### Windows installation
 When you reach the "Let's connect you to a network" screen during the Windows 11 installation, do not connect to any network.
 
